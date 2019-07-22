@@ -1,0 +1,23 @@
+@mixin smMidea {
+    @media screen and (max-width: 550px) {
+        @content;
+    }
+}
+
+@mixin mdMidea {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin lgMidea {
+    @media screen and (min-width: 769px) and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin xlMidea {
+    @media screen and (min-width: 1201px) {
+        @content;
+    }
+}

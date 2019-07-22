@@ -1,0 +1,20 @@
+@include xlMidea {
+
+}
+
+@include lgMidea {
+    
+}
+
+@include mdMidea {
+    
+}
+
+@include smMidea {
+    .one-third,
+    .two-thirds,
+    .one-fourth,
+    .half {
+        width: 100%;
+    }
+}

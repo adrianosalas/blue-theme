@@ -1,2 +1,39 @@
+* {
+  box-sizing: border-box; }
+
+.row {
+  margin: 0 auto;
+  max-width: 1200px; }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+
+.column {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.half {
+  width: calc(100% / 2); }
+
+.one-third {
+  width: calc(100% / 3); }
+
+.one-fourth {
+  width: calc(100% / 4); }
+
+.two-thirds {
+  width: calc(100% / 3 * 2); }
+
 body {
+  margin: 0;
+  color: #fff;
   background: #191d1f; }
+
+@media screen and (max-width: 550px) {
+  .one-third,
+  .two-thirds,
+  .one-fourth,
+  .half {
+    width: 100%; } }
