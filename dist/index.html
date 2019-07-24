@@ -7,11 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/0a8efda2aa.js"></script>
     <title>Blue</title>
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="nav-bar">
             <div class="row">
                 <nav>
                     <ul>
@@ -22,15 +23,54 @@
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Hours</a></li>
                     </ul>
-                </nav>          
+                </nav>  
+                <div class="cart-container">
+                    <img width="110" src="images/cart@2x.png" alt="cart">
+                    <div class="cart-info">
+                        <h2>7</h2>
+                        <h3>Items&nbsp;in&nbsp;Cart</h3>
+                        <p>$239</p>
+                    </div>
+                </div>        
+            </div>      
+        </div>
+        <div class="row">
+            <div class="column end form-container">
+                <form action="#">
+                    <input type="search" name="search" placeholder="Search here" autocomplete="false">
+                    <button type="submit" class="btn btn-success">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
             </div>
         </div>
-        
-
+        <div class="row">
+            <img width="180" src="images/LOGO@2x.png" alt="blue since 1975" class="logo">      
+        </div>
+        <div class="row products-filter">
+            <div class="column end">
+                <ul>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Living Room</a></li>
+                    <li><a href="#">Bedroom</a></li>
+                    <li><a href="#">Multimedia</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">On The Road</a>
+                        <div class="dropdown-content">
+                        <a href="#">Booq</a>
+                        <a href="#">Be Ez</a>
+                        <a href="#">Built NY</a>
+                        <a href="#">Dodo Ca</a>
+                        <a href="#">In Case</a>
+                        <a href="#">Sweetpocket</a>
+                        <a href="#">Swiss Army</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Laptop Bags & Cases</a></li>
+                    <li><a href="#">Desktop</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <div class="row">
-        <div class="half column">Half column</div>
-        <div class="half column">Half column</div>
-    </div>
 </body>
 </html>

@@ -3,7 +3,8 @@
 }
 .row {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
+    position: relative;
     &::after {
         content: "";
         clear: both;
@@ -14,6 +15,9 @@
     float: left;
     padding-left: 15px;
     padding-right: 15px;
+}
+.column.end {
+    float: right;
 }
 .half {
     width: calc(100% / 2);
