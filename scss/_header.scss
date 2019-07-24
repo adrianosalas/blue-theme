@@ -1,0 +1,31 @@
+header {
+
+    background: #050606;
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        list-style-type: none;
+    }
+
+    li {
+        float: right;
+    }
+
+    li a, li span{
+        color: #ccc;
+        text-align: center;
+        padding: 14px 10px;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    li:first-child a {
+        color: $secondary-color;
+    }
+
+    li a:hover {
+        color: $secondary-color;
+    }    
+}

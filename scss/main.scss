@@ -1,13 +1,43 @@
-@import 'gen';
-@import 'breakpoints';
+@import url('https://fonts.googleapis.com/css?family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
 
 $primary-color: #191d1f;
-$secondary-color: #32a7e5;
+$secondary-color: #32a7e5; 
+
+@mixin six-caps-font($font-weight) {
+    font-family: 'Six Caps', sans-serif;
+    font-weight: $font-weight;
+}
+
+@mixin pt-sans-font ($font-weight) {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: $font-weight;
+}
+
+@mixin arial-font ($font-weight) {
+    font-family: Arial, sans-serif;
+    font-weight: $font-weight;
+}
+
+%btn {
+    width: 100%;
+}
+  
+.btn-blue {
+    @extend %btn;
+    background: $primary-color;
+}
+
+@import 'gen';
+@import 'breakpoints';
+@import 'header';
 
 body {
     margin: 0;
     color: #fff;
-    background: $primary-color;
+    background-size: 100%;
+    @include pt-sans-font(400);
+    background: $primary-color url('../images/site-background@2x.png') center top no-repeat;
 }
 
 @import 'responsive';

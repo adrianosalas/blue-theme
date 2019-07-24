@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Six+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap");
+.btn-blue {
+  width: 100%; }
+
+.btn-blue {
+  background: #191d1f; }
+
 * {
   box-sizing: border-box; }
 
@@ -26,10 +34,33 @@
 .two-thirds {
   width: calc(100% / 3 * 2); }
 
+header {
+  background: #050606; }
+  header ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none; }
+  header li {
+    float: right; }
+  header li a, header li span {
+    color: #ccc;
+    text-align: center;
+    padding: 14px 10px;
+    display: inline-block;
+    text-decoration: none; }
+  header li:first-child a {
+    color: #32a7e5; }
+  header li a:hover {
+    color: #32a7e5; }
+
 body {
   margin: 0;
   color: #fff;
-  background: #191d1f; }
+  background-size: 100%;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  background: #191d1f url("../images/site-background@2x.png") center top no-repeat; }
 
 @media screen and (max-width: 550px) {
   .one-third,
