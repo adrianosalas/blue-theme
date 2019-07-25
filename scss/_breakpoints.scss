@@ -10,6 +10,12 @@
     }
 }
 
+@mixin mdUpMidea {
+    @media screen and (min-width: 769px) {
+        @content;
+    }
+}
+
 @mixin lgMidea {
     @media screen and (min-width: 769px) and (max-width: 1200px) {
         @content;

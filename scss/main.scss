@@ -19,7 +19,7 @@ $secondary-color: #32a7e5;
     font-weight: $font-weight;
 }
 
-.no-padding {
+.no-padding-x {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
@@ -43,6 +43,10 @@ body {
     background-size: 100%;
     @include pt-sans-font(400);
     background: $primary-color url('../images/site-background@2x.png') center top no-repeat;
+}
+
+input[type=checkbox]{
+    display: none;
 }
 
 @import 'responsive';

@@ -13,15 +13,15 @@
 <body>
     <header>
         <div class="nav-bar">
-            <div class="row">
+            <div class="row space-right">
                 <nav>
-                    <ul>
-                        <li><a href="#">Logout</a></li>
-                        <li><span>Hi Jan!</span></li>
-                        <li><span>|</span></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">About Us</a></li>
+                    <ul class="top-menu">
                         <li><a href="#">Hours</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><span>|</span></li>
+                        <li><span>Hi Jan!</span></li>
+                        <li><a href="#">Logout</a></li>
                     </ul>
                 </nav>  
                 <div class="cart-container">
@@ -35,40 +35,48 @@
             </div>      
         </div>
         <div class="row">
-            <div class="column end form-container">
-                <form action="#">
-                    <input type="search" name="search" placeholder="Search here" autocomplete="false">
-                    <button type="submit" class="btn btn-success">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </form>
+            <div class="column one-third">
+                <img width="180" src="images/LOGO@2x.png" alt="blue since 1975" class="logo"> 
             </div>
-        </div>
-        <div class="row">
-            <img width="180" src="images/LOGO@2x.png" alt="blue since 1975" class="logo">      
-        </div>
-        <div class="row products-filter">
-            <div class="column end">
-                <ul>
-                    <li><a href="#">Fashion</a></li>
-                    <li><a href="#">Living Room</a></li>
-                    <li><a href="#">Bedroom</a></li>
-                    <li><a href="#">Multimedia</a></li>
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">On The Road</a>
-                        <div class="dropdown-content">
-                        <a href="#">Booq</a>
-                        <a href="#">Be Ez</a>
-                        <a href="#">Built NY</a>
-                        <a href="#">Dodo Ca</a>
-                        <a href="#">In Case</a>
-                        <a href="#">Sweetpocket</a>
-                        <a href="#">Swiss Army</a>
-                        </div>
-                    </li>
-                    <li><a href="#">Laptop Bags & Cases</a></li>
-                    <li><a href="#">Desktop</a></li>
-                </ul>
+            <div class="column two-thirds no-padding-x">
+                <div class="row space-right">
+                    <div class="column form-container">
+                        <form action="#">
+                            <input type="search" name="search" placeholder="Search here" autocomplete="false">
+                            <button type="submit" class="btn btn-success">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row products-filter">
+                    <div class="column">
+                        <label for="show-products-menu" class="show-menu">PRODUCT FILTERS&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></label>
+                        <input type="checkbox" id="show-products-menu" role="button">
+                        <ul class="drop-product-filters">
+                            <li><a href="#">Desktop</a></li>
+                            <li><a href="#">Laptop Bags & Cases</a></li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropbtn">On The Road</a>
+                                <label for="show-road-menu" class="show-menu">On The Road&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></label>
+                                <input type="checkbox" id="show-road-menu" role="button">
+                                <div class="dropdown-content road-items">
+                                    <a href="#">Booq</a>
+                                    <a href="#">Be Ez</a>
+                                    <a href="#">Built NY</a>
+                                    <a href="#">Dodo Ca</a>
+                                    <a href="#">In Case</a>
+                                    <a href="#">Sweetpocket</a>
+                                    <a href="#">Swiss Army</a>
+                                </div>
+                            </li>
+                            <li><a href="#">Multimedia</a></li>
+                            <li><a href="#">Bedroom</a></li>
+                            <li><a href="#">Living Room</a></li>
+                            <li><a href="#">Fashion</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
