@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
+    <meta name="description" content="Blue Theme Ecommerce">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="nivo_slider/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo_slider/css/nivo-slider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/0a8efda2aa.js"></script>
     <title>Blue</title>
@@ -38,8 +40,8 @@
             <div class="column one-third">
                 <img width="180" src="images/LOGO@2x.png" alt="blue since 1975" class="logo"> 
             </div>
-            <div class="column two-thirds no-padding-x">
-                <div class="row space-right">
+            <div class="column two-thirds">
+                <div class="row space-right-search">
                     <div class="column form-container">
                         <form action="#">
                             <input type="search" name="search" placeholder="Search here" autocomplete="false">
@@ -48,37 +50,348 @@
                             </button>
                         </form>
                     </div>
-                </div>
-                <div class="row products-filter">
-                    <div class="column">
-                        <label for="show-products-menu" class="show-menu">PRODUCT FILTERS&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></label>
-                        <input type="checkbox" id="show-products-menu" role="button">
-                        <ul class="drop-product-filters">
-                            <li><a href="#">Desktop</a></li>
-                            <li><a href="#">Laptop Bags & Cases</a></li>
-                            <li class="dropdown">
-                                <a href="javascript:void(0);" class="dropbtn">On The Road</a>
-                                <label for="show-road-menu" class="show-menu">On The Road&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></label>
-                                <input type="checkbox" id="show-road-menu" role="button">
-                                <div class="dropdown-content road-items">
-                                    <a href="#">Booq</a>
-                                    <a href="#">Be Ez</a>
-                                    <a href="#">Built NY</a>
-                                    <a href="#">Dodo Ca</a>
-                                    <a href="#">In Case</a>
-                                    <a href="#">Sweetpocket</a>
-                                    <a href="#">Swiss Army</a>
-                                </div>
-                            </li>
-                            <li><a href="#">Multimedia</a></li>
-                            <li><a href="#">Bedroom</a></li>
-                            <li><a href="#">Living Room</a></li>
-                            <li><a href="#">Fashion</a></li>
-                        </ul>
-                    </div>
-                </div>
+                </div>                
+            </div>
+        </div>
+        <div class="row products-filter">
+            <div class="column">
+                <label for="show-products-menu" class="show-menu">PRODUCT FILTERS&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></label>
+                <input type="checkbox" id="show-products-menu" role="button">
+                <ul class="drop-product-filters">
+                    <li><a href="#">Desktop</a></li>
+                    <li><a href="#">Laptop Bags & Cases</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropbtn">On The Road</a>
+                        <label for="show-road-menu" class="show-menu">On The Road&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></label>
+                        <input type="checkbox" id="show-road-menu" role="button">
+                        <div class="dropdown-content road-items">
+                            <a href="#">Booq</a>
+                            <a href="#">Be Ez</a>
+                            <a href="#">Built NY</a>
+                            <a href="#">Dodo Ca</a>
+                            <a href="#">In Case</a>
+                            <a href="#">Sweetpocket</a>
+                            <a href="#">Swiss Army</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Multimedia</a></li>
+                    <li><a href="#">Bedroom</a></li>
+                    <li><a href="#">Living Room</a></li>
+                    <li><a href="#">Fashion</a></li>
+                </ul>
             </div>
         </div>
     </header>
+
+    <main>
+        <div class="row">
+            <div class="one-third column">
+                <section id="top-sellers-products">
+                    <div>
+                        <p class="blue-text title">Top Sellers</p>
+                    </div>
+                    <div class="main-product">
+                        <div><img width="100%" src="images/products/ipod_usb@2x.png" alt="iPod USB-stick 4GB" class="space-y"></div>                  
+                        <div class="row">
+                            <div class="half column no-padding-x">
+                                <p class="product-name">iPod USB-stick 4GB By&nbsp;Bone</p>
+                            </div>
+                            <div class="half column no-padding-x align-right align-mobile">
+                                <p class="product-price">$42.00</p>
+                                <div class="rating">
+                                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div><button class="add-cart-btn">Add to Cart</button></div>
+                    </div>
+                    <div class="regular-product space-y-t">                  
+                        <div class="row">
+                            <div class="half column no-padding-x">
+                                <img width="100%" src="images/products/ipod_usb@2x.png" alt="iPod USB-stick 4GB">
+                            </div>
+                            <div class="half column no-padding-x align-left space-x-l">
+                                <p class="product-name"><span class="blue-text bold">2</span> iPod USB-stick 4GB By&nbsp;Bone</p>
+                                <div class="rating">
+                                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                </div>
+                                <p class="product-price bold">$29.00</p>
+                            </div>
+                        </div>
+                        <div><button class="add-cart-btn">Add to Cart</button></div>
+                    </div>
+                    <div class="regular-product space-y-t">                  
+                            <div class="row">
+                                <div class="half column no-padding-x">
+                                    <img width="100%" src="images/products/ipod_usb@2x.png" alt="iPod USB-stick 4GB">
+                                </div>
+                                <div class="half column no-padding-x align-left space-x-l">
+                                    <p class="product-name"><span class="blue-text bold">3</span> iPod USB-stick 4GB By&nbsp;Bone</p>
+                                    <div class="rating">
+                                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                    </div>
+                                    <p class="product-price bold">$29.00</p>
+                                </div>
+                            </div>
+                            <div><button class="add-cart-btn">Add to Cart</button></div>
+                        </div>
+                </section>
+                <section id="top-sellers">
+                    <div class="hide-on-mobile">
+                        <p class="blue-text title">Top Sellers</p>
+                    </div>
+                    <div class="row dropdown-menu">
+                        <div class="full column no-padding-x">
+                            <nav>
+                                <label for="show-menu" class="show-menu">Top Sellers</label>
+                                <input type="checkbox" id="show-menu" role="button">
+                                <ul class="menu">
+                                    <li><a href="#">Bone</a></li>
+                                    <li><a href="#">Booq</a></li>
+                                    <li><a href="#">Built NY</a></li>
+                                    <li><a href="#">Moshi</a></li>
+                                    <li><a href="#">InCase</a></li>
+                                    <li><a href="#">Bodum</a></li>
+                                    <li><a href="#">YouRock</a></li>
+                                    <li><a href="#">HyperJuice</a></li>
+                                    <li><a href="#">Ferguson Hill</a></li>
+                                    <li><a href="#">Sonoro</a></li>
+                                    <li><a href="#">MCA</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="two-thirds column">
+                <section>
+                        <div class="slider-wrapper theme-default">
+                            <div id="slider" class="nivoSlider">
+                                <img width="100%" src="images/banner1@2x.png" data-thumb="images/banner1@2x.png" alt="" title="#htmlcaption"/>
+                                <img width="100%" src="images/banner2@2x.png" data-thumb="images/banner2@2x.png" alt="" />
+                                <img width="100%" src="images/banner3@2x.png" data-thumb="images/banner3@2x.png" alt="" />
+                                <img width="100%" src="images/banner4@2x.png" data-thumb="images/banner4@2x.png" alt="" />
+                            </div>
+                            <div id="htmlcaption" class="nivo-html-caption">
+                                <h1>SONORO EKLIPSE</h1>
+                                <a href="#"><img class="arrow" src="images/Arrow@2x.png" width="30" alt="arrow"></a> 
+                            </div>
+                        </div>    
+                </section>
+                <section class="feature-products">
+                    <nav>
+                        <ul>
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">Featured Product&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></a>
+                                <div class="dropdown-content">
+                                <a href="#">Feature 1</a>
+                                <a href="#">Feature 2</a>
+                                <a href="#">Feature 3</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <section>
+                    <div class="row structure">
+                        <div class="products-grid column">
+                            <div class="image-container"><img width="100%" src="images/products/_ipad_wallet@2x.png" alt="Bling My Thing iPad Wallet"></div>                  
+                            <div class="row">
+                                <div class="half column no-padding-x">
+                                    <p class="product-name">Bling My Thing iPad&nbsp;Wallet</p>
+                                </div>
+                                <div class="half column no-padding-x align-right align-mobile">
+                                    <p class="product-price">$52.00</p>
+                                    <div class="rating">
+                                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><button class="add-cart-btn">Add to Cart</button></div>
+                        </div>
+                        <div class="products-grid column">
+                            <div class="image-container"><img width="100%" src="images/products/ninja_usb_stick@2x.png" alt="Ninja USB-stick 4GB"></div>                  
+                            <div class="row">
+                                <div class="half column no-padding-x">
+                                    <p class="product-name">Ninja USB-stick 4GB By&nbsp;Bone</p>
+                                </div>
+                                <div class="half column no-padding-x align-right align-mobile">
+                                    <p class="product-price">$33.00</p>
+                                    <div class="rating">
+                                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><button class="add-cart-btn">Add to Cart</button></div>
+                        </div>
+                        <div class="products-grid column">
+                            <div class="image-container"><img width="100%" src="images/products/booq_taipan@2x.png" alt="Booq Taipan Shadow XL 16-17 Laptop Bag"></div>                  
+                            <div class="row">
+                                <div class="half column no-padding-x">
+                                    <p class="product-name">Booq Taipan Shadow XL 16-17" Laptop&nbsp;Bag</p>
+                                </div>
+                                <div class="half column no-padding-x align-right align-mobile">
+                                    <p class="product-price">$149.00</p>
+                                    <div class="rating">
+                                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><button class="add-cart-btn">Add to Cart</button></div>
+                        </div>
+                        <div class="products-grid column">
+                            <div class="image-container"><img width="100%" src="images/products/bodum_pepper_salt@2x.png" alt="Bodum Twin Pepper&Salt"></div>                  
+                            <div class="row">
+                                <div class="half column no-padding-x">
+                                    <p class="product-name">Bodum Twin&nbsp;Pepper&Salt</p>
+                                </div>
+                                <div class="half column no-padding-x align-right align-mobile">
+                                    <p class="product-price">$22.00</p>
+                                    <div class="rating">
+                                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><button class="add-cart-btn">Add to Cart</button></div>
+                        </div>
+                        <div class="products-grid column">
+                            <div class="image-container"><img width="100%" src="images/products/relish_lunch_tote@2x.png" alt="Built Relish Lunch Tote"></div>                  
+                            <div class="row">
+                                <div class="half column no-padding-x">
+                                    <p class="product-name">Built Relish Lunch&nbsp;Tote</p>
+                                </div>
+                                <div class="half column no-padding-x align-right align-mobile">
+                                    <p class="product-price">$149.00</p>
+                                    <div class="rating">
+                                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><button class="add-cart-btn">Add to Cart</button></div>
+                        </div>
+                        <div class="products-grid column">
+                            <div class="image-container"><img width="100%" src="images/products/link_iphone@2x.png" alt="Bone Link II for iPhone or iPod"></div>                  
+                            <div class="row">
+                                <div class="half column no-padding-x">
+                                    <p class="product-name">Bone Link II for iPhone or iPod</p>
+                                </div>
+                                <div class="half column no-padding-x align-right align-mobile">
+                                    <p class="product-price">$19.00</p>
+                                    <div class="rating">
+                                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><button class="add-cart-btn">Add to Cart</button></div>
+                        </div>
+                        <div class="products-grid column">
+                                <div class="image-container"><img width="100%" src="images/products/_ipad_wallet@2x.png" alt="Bling My Thing iPad Wallet"></div>                  
+                                <div class="row">
+                                    <div class="half column no-padding-x">
+                                        <p class="product-name">Bling My Thing iPad&nbsp;Wallet</p>
+                                    </div>
+                                    <div class="half column no-padding-x align-right align-mobile">
+                                        <p class="product-price">$52.00</p>
+                                        <div class="rating">
+                                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div><button class="add-cart-btn">Add to Cart</button></div>
+                            </div>
+                            <div class="products-grid column">
+                                <div class="image-container"><img width="100%" src="images/products/ninja_usb_stick@2x.png" alt="Ninja USB-stick 4GB"></div>                  
+                                <div class="row">
+                                    <div class="half column no-padding-x">
+                                        <p class="product-name">Ninja USB-stick 4GB By&nbsp;Bone</p>
+                                    </div>
+                                    <div class="half column no-padding-x align-right align-mobile">
+                                        <p class="product-price">$33.00</p>
+                                        <div class="rating">
+                                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div><button class="add-cart-btn">Add to Cart</button></div>
+                            </div>
+                            <div class="products-grid column">
+                                <div class="image-container"><img width="100%" src="images/products/booq_taipan@2x.png" alt="Booq Taipan Shadow XL 16-17 Laptop Bag"></div>                  
+                                <div class="row">
+                                    <div class="half column no-padding-x">
+                                        <p class="product-name">Booq Taipan Shadow XL 16-17" Laptop&nbsp;Bag</p>
+                                    </div>
+                                    <div class="half column no-padding-x align-right align-mobile">
+                                        <p class="product-price">$149.00</p>
+                                        <div class="rating">
+                                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div><button class="add-cart-btn">Add to Cart</button></div>
+                            </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row xtra-space">
+            <div class="one-third column space-y">
+                <div class="row">
+                    <div class="half no-padding-x column">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Order Status</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">About Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="half no-padding-x column">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="two-thirds column align-right align-mobile space-y">
+                <h2>GET PROMO CODES BY EMAIL</h2>
+                <form action="#">
+                    <input type="email" name="email" placeholder="Enter your email address here" autocomplete="false">
+                    <button type="submit" class="btn-email">
+                        <img class="arrow" src="images/Arrow@2x.png" width="10" alt="arrow">
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="one-third column">
+                <div class="row">
+                    <div class="full no-padding-x space-y column">
+                        <p class="copyright">Copyright 2011 Blue. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="two-thirds column align-right align-mobile space-y">
+                <img src="images/CCs@2x.png" width= "137" height="auto" alt="Credit Cards">
+            </div>
+        </div>
+    </footer>
+
+    <div id="productModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img width="100%" src="images/products/_ipad_wallet@2x.png" alt="Bling My Thing">
+                <h2>Bling My Thing iPad Wallet $52.00</h2>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="nivo_slider/vendor/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="nivo_slider/js/jquery.nivo.slider.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
 
 $primary-color: #191d1f;
-$secondary-color: #32a7e5; 
+$secondary-color: #32a7e5;
 
 @mixin six-caps-font($font-weight) {
     font-family: 'Six Caps', sans-serif;
@@ -19,34 +19,9 @@ $secondary-color: #32a7e5;
     font-weight: $font-weight;
 }
 
-.no-padding-x {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-%btn {
-    width: 100%;
-}
-  
-.btn-blue {
-    @extend %btn;
-    background: $primary-color;
-}
-
 @import 'gen';
 @import 'breakpoints';
 @import 'header';
-
-body {
-    margin: 0;
-    color: #fff;
-    background-size: 100%;
-    @include pt-sans-font(400);
-    background: $primary-color url('../images/site-background@2x.png') center top no-repeat;
-}
-
-input[type=checkbox]{
-    display: none;
-}
-
+@import 'content';
+@import 'modal';
 @import 'responsive';

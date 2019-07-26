@@ -1,6 +1,33 @@
 * {
     box-sizing: border-box;
 }
+::placeholder {
+    opacity: 1;
+    color: #848484;
+}  
+:-ms-input-placeholder { 
+    color: #848484;
+}  
+::-ms-input-placeholder { 
+    color: #848484;
+}
+body {
+    margin: 0;
+    color: #fff;
+    background-size: 100%;
+    @include pt-sans-font(400);
+    background: $primary-color url('../images/site-background@2x.png') center top no-repeat;
+}
+input[type=checkbox]{
+    display: none;
+}
+%btn {
+    width: 100%;
+}  
+.btn-blue {
+    @extend %btn;
+    background: $primary-color;
+}
 .row {
     margin: 0 auto;
     max-width: 1000px;
@@ -19,6 +46,9 @@
 .column.end {
     float: right;
 }
+.full {
+    width: 100%;
+}
 .half {
     width: calc(100% / 2);
 }
@@ -30,11 +60,4 @@
 }
 .two-thirds {
     width: calc(100% / 3 * 2);
-}
-@function switch-color($color) {
-    @if (lightness($color) > 40) {
-        @return #222;
-    } @else {
-        @return #fff;
-    }
 }

@@ -1,9 +1,23 @@
 @include xlMidea {
-
+    .products-grid{
+        width: calc(100% / 3);
+    }
+    #productModal .modal-content {
+        width: 25%;
+    }
 }
 
 @include lgMidea {
-    
+    .products-grid{
+        width: calc(100% / 2);
+    }
+    #productModal .modal-content {
+        width: 30%;
+    }
+    .nivoSlider .nivo-caption {
+        left: 40%;
+        width: 60%;
+    }
 }
 
 @include mdUpMidea {
@@ -11,6 +25,7 @@
         .dropdown:hover .dropdown-content {
             opacity: 1;
             height: auto;
+            z-index: 99;
             display: block;
             transform: translate3d(0, 0, 0);
         }
@@ -22,11 +37,16 @@
     }
 }
 
-@include mdMidea {
-    
-}
-
 @include smMidea {
+
+    .products-grid{
+        width: 100%;
+    }
+
+    #productModal .modal-content {
+        width: 80%;
+    }
+
     .one-third,
     .two-thirds,
     .one-fourth,
@@ -39,7 +59,11 @@
         }
         .products-filter {
             margin-top: 0;
+            color: #CCC;
             right: initial;
+            text-align: center;
+            margin-bottom: 1rem;
+            background: #070908;
             .column {
                 float: none;
             }
@@ -50,6 +74,7 @@
             }
             .dropdown-content {
                 position: relative;
+                background: darken($primary-color, 5%);
                 a {
                     text-align: center;
                 }
@@ -57,8 +82,13 @@
             .dropbtn {
                 display: none;
             }
+            .show-menu {
+                display: block;
+                padding: 10px 5px;
+                text-align: center;
+            }
         }
-        .space-right {
+        .space-right, .space-right-search {
             padding-right: 0;
         }
         .form-container {
@@ -75,7 +105,8 @@
                 }
             }
         }
-        .cart-container {            
+        .cart-container {
+            right: 0;            
             img {
                 width: 4rem !important;
             }
@@ -102,14 +133,14 @@
             transform: translate3d(0, 50px, 0);
             -webkit-transform: translate3d(0, 50px, 0);
         }
-        #show-products-menu:checked ~ .drop-product-filters{
+        #show-products-menu:checked ~ .drop-product-filters {
             opacity: 1;
             height: auto;
             display: block;
             transform: translate3d(0, 0, 0);
             -webkit-transform: translate3d(0, 0, 0);
         }
-        #show-road-menu:checked ~ .road-items{
+        #show-road-menu:checked ~ .road-items {
             opacity: 1;
             height: auto;
             display: block;
@@ -117,4 +148,54 @@
             -webkit-transform: translate3d(0, 0, 0);
         }
     }
+
+    .space-x-l {
+        padding-left: 0; 
+    }
+
+    .align-mobile {
+        text-align: left;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .nivoSlider .nivo-caption {
+        left: 10%;
+        width: 90%;
+    }
+
+    .dropdown-menu {
+        ul {
+            position: static;
+            height: 0;
+            opacity: 0;
+            transition: all .4s ease-out;
+            transform: translate3d(0, 50px, 0);
+            padding: 0;
+            li {
+                margin-bottom: 1px;
+                width: 100%;
+                a {
+                    width: 100%;
+                }
+            }
+        }       
+        .show-menu {
+            display:block;
+        }
+    }
+
+    #top-sellers {
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        padding: 1rem .5rem;
+        .row.xtra-space {
+            padding-bottom: 1rem;
+        }
+    }
+
 }
